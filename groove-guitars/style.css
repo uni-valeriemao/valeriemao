@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+main{
+	max-width: 1000px;
+	margin: 30px auto;
+	padding: 10px;
+}
+
+body{
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-size: 20px;
+}
+
+h1, h2, h3{
+	font-family: "Anton", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	/*border and fill*/
+	border: 3px solid black;
+	background-color: #ffd200;
+}
+
+/*hours of operation table css*/
+table{
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+tr:nth-child(even){
+  background-color: #e4e4e4;
+}
+th{
+  background-color: #ffd200;
+  color: black;
+  font-family:"Roboto", sans-serif;
+  font-style: normal;
+}
+td, th{
+  border: 1px solid black;
+  font-family:"Roboto", sans-serif;
+  font-style: normal;
+  padding: 5px;
+  text-align: center;
+}
+
+/*Navigation*/
+nav{
+	text-align: center;
+	line-height: 300%;
+	background-color: #ffd200;
+}
+nav ul{
+	list-style-type: none;
+}
+nav li{
+	display: inline-block;
+	padding:5px;
+	margin-right: 25px;
+	margin-left: 25px;
+	font-family: "Anton", sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+}
+nav a{
+	text-decoration: none;
+}
+nav a:link{
+	color:black;
+}
+nav a:visited{
+	color:black;
+}
+nav a:hover{
+	color:#ffffff;
+}
+nav a:active{
+	color:#004aad;
+}
+
+/*css for logo display*/
+.logo{
+	max-width: 275px;
+	height: auto;
+	display: block;
+	margin:0 auto;
+	padding:20px;
+	/*padding-left: 50px;*/
+}
+
+/*css for home-hero*/
+.home-hero{
+	background-image: url(images/colorful-electric-guitars.jpg);
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.home-hero h1{
+	/*elimiates border and fill for h1 elemet*/
+	border:none;
+	background-color: rgba(0, 0, 0, 0);
+	/*text settings*/
+	font-family: "Permanent Marker", cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 70px;
+	/*spacing for text, 'find your groove!'*/
+	padding-top: 150px;
+	/*shadow behind text*/
+	text-shadow: 2px 2px 2px white;
+}
+
+.about-grooves{
+	border:none;
+	background-color: rgba(0, 0, 0, 0);
+	/*text settings*/
+	font-family: "Permanent Marker", cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 70px;
+	margin-top: -10px;
+
+}
+
+.float-right{
+	float:right;
+	max-width: 50%;
+	height: auto;
+	margin: 10px 10px 10px 0;
+	border: 2px solid black;
+}
+
+.red-guitar{
+	max-width: 125px;
+	height: auto;
+	display: block;
+	margin:0 auto;
+	padding:10px;
+}
+
+form{
+	border:3px solid black;
+	padding: 10px;
+	display: inline-block;
+	font-family: "Permanent Marker", cursive;
+}
+
+label{
+	float:left;
+	width: 7em;
+	padding-right: 5em;
+}
+
+input{
+	width: 100%;
+	display: block;	
+	height:30px;
+}
+
+input[type=submit]{
+	background-color: #ffd200;
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	height:30px;
+	margin: 0 auto;
+	font-family: "Permanent Marker", cursive;
+}
+
+textarea{
+	width:100%;
+	resize: none;
+}
+
+.permanent-marker{
+	font-family: "Permanent Marker", cursive;
+}
+
+/*video container css*/
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+	margin: 15px;
+	border-top: black 2px solid;
+	text-align: center;
+	font-size: 15px;
+
+}
+
+/*CSS without a media query--applies to all sizes unless overridden*/
+h1{
+		font-size: 4em;
+ }
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+	h1{
+		font-size: 1.8em;
+}
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+	h1{
+		font-size: 1.5em;
+	}
+	.float-right{
+		display: none;
+	}
+		/*hero image adjustment*/
+	.home-hero{
+		height: 125px;
+	}
+	.home-hero h1{
+		height: 125px;
+		font-size: 1.5em;
+		padding-top: 45px;
+	}
+	form{
+		display: block;
+		text-align: left;
+	}
+	input{
+		width: 100%;
+	}
+	textarea{
+		width:100%;
+	}
+}

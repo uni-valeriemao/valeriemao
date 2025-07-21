@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body{
+	font-family:'DM Sans', sans-serif;
+	color: black;
+	background-color: #bceb83;
+}
+
+header{
+	font-family: "Bungee Shade", sans-serif;
+}
+
+main{
+	max-width: 1200px;
+}
+
+.col-sm-2{
+	font-size: 25px;
+	text-align: right;
+}
+
+.hero-image{
+	border-radius: 15px;
+	border: 2px solid orange;
+	box-shadow: 5px 10px orange;
+	margin-bottom: 25px;
+}
+
+header{
+	text-align: center;
+}
+
+h1, h2{
+	font-family: 'DM Sans', sans-serif;
+	color:orange;
+}
+
+/*link colors aside from nav*/
+a:link{
+	color:black;
+}
+a:visited{
+	color:black;
+}
+a:hover{
+	color:blue;
+}
+a:active{
+	color:deeppink;
+}
+
+/*navigation*/
+nav{
+	background-color:orange;
+	border-top: 2px solid orange;
+	border-bottom: 2px solid orange;
+	padding: 5px;
+}
+nav ul{
+	list-style-type: none;
+	text-align: center;
+	margin: 8px 0;
+	padding:0;
+}
+nav li{
+	display:inline;
+	padding:5px;
+}
+nav a{
+	text-decoration: none;
+}
+nav a:link{
+	color:black;
+}
+nav a:visited{
+	color:black;
+}
+nav a:hover{
+	color:hotpink;
+}
+nav a:active{
+	color:pink;
+}
+
+/*main*/
+main{
+	max-width: 1000px;
+	margin: 20px auto;
+	padding:10px;
+}
+
+/*footer*/
+footer{
+	border-top: black 2px solid;
+	text-align: center;
+}
+
+
+.fa{
+	font-size: 3em;
+	color: orange;
+}
+
+.fa-facebook-official, .fa-instagram{
+	font-size: 1.7em;
+	margin-right:10px;
+	text-align: left;
+}
+.fa-amazon{
+	font-size:1.5em;
+	margin-right: 10px;
+}
+
+.gallery .preview{
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+#preview{
+	border-radius: 25px;
+	border: solid 2px orange;
+  box-shadow: 5px 10px orange;
+}
+
+.gallery .gallery-thumbnails img {
+    width: 100px;
+    height: 75px;
+    margin: 3px 10px 10px 0;
+    border-radius: 25px;
+    border: solid 2px orange;
+    box-shadow: 5px 10px orange;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+/*media queries*/
+/*CSS without a media query--applies to all sizes unless overridden*/
+h1{
+  font-size: 4em;
+}
+
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+  h1{
+    font-size: 1.8em;
+  }
+}
+
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 1.5em;
+  }
+}
